@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Custom Styles */
+    .header {
+      background-image: url('https://via.placeholder.com/1600x500');
+      background-size: cover;
+      color: white;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px; /* Set a fixed height */
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+    }
+    .footer p, .footer a {
+      color: #b5b5b5;
+    }
+    .footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header py-5 text-center text-white" style="background-image: url('img/me.png'); background-size: cover; background-position: center;">
+    <div class="container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <a href="index.html" class="btn btn-primary btn-lg mt-3">Discover More</a>
+    </div>
+  </header>
+  
+  <!-- Recent Posts Section -->
+  <section id="recent-posts" class="container my-5">
+    <h2 class="text-center mb-5">Recent Posts</h2>
+    <div class="row g-4" id="posts">
+      <!-- Post 1 -->
+      <div class="col-md-4 post" data-category="technology">
+        <div class="card shadow-sm">
+          <img src="https://media.licdn.com/dms/image/D4D12AQGcNSSSmAOXrA/article-cover_image-shrink_600_2000/0/1696242586355?e=2147483647&v=beta&t=u6yDYLQ8UVmI4Raoris8WDw7uavqMOk00IJKm53byJA" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">Exploring the Future of AI</h5>
+            <p class="card-text text-muted">Published on October 30, 2024</p>
+            <p class="card-text">A look into how artificial intelligence is shaping the future across different industries.</p>
+            <a href="post1.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="col-md-4 post" data-category="travel">
+        <div class="card shadow-sm">
+          <img src="https://i0.wp.com/blog.crystaltravel.co.uk/wp-content/uploads/2024/01/Krabi-Thailand.png?fit=1200%2C300&ssl=1" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">Top 10 Travel Destinations for 2024</h5>
+            <p class="card-text text-muted">Published on October 3, 2024</p>
+            <p class="card-text">Discover the must-visit places that are trending for travelers in 2024.</p>
+            <a href="post2.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="col-md-4 post" data-category="lifestyle">
+        <div class="card shadow-sm">
+          <img src="https://www.tooltester.com/wp-content/uploads/2019/01/how-to-start-a-succesful-blog-2.png" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">How to Start a Successful Blog</h5>
+            <p class="card-text text-muted">Published on October 10, 2024</p>
+            <p class="card-text">Tips and tricks for building a blog that attracts readers and builds a community.</p>
+            <a href="post3.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="col-md-4 post" data-category="lifestyle">
+        <div class="card shadow-sm">
+          <img src="https://kaynutrition.com/wp-content/uploads/2016/03/how-to-eat-healthy-on-a-budget-2.jpg" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Eating on a Budget</h5>
+            <p class="card-text text-muted">Published on October 15, 2024</p>
+            <p class="card-text">Learn how to eat well without breaking the bank with these budget-friendly tips.</p>
+            <a href="post4.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Post 5 -->
+      <div class="col-md-4 post" data-category="technology">
+        <div class="card shadow-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXPhSVh7N2jkrM0nYVRIJUZ3p6s8QXi_o45Q&s" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">The Rise of Remote Work</h5>
+            <p class="card-text text-muted">Published on October 20, 2024</p>
+            <p class="card-text">Examining the trend of remote work and how it’s impacting industries worldwide.</p>
+            <a href="post5.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Post 6 -->
+      <div class="col-md-4 post" data-category="lifestyle">
+        <div class="card shadow-sm">
+          <img src="https://i.ytimg.com/vi/I9TzcM7zJWw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCWOuEs-GYlvDczRzMbMIYwrAexA" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">A Guide to Mindfulness Meditation</h5>
+            <p class="card-text text-muted">Published on October 25, 2023</p>
+            <p class="card-text">Explore techniques and tips for incorporating mindfulness into your daily life.</p>
+            <a href="post6.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Post 7 -->
+      <div class="col-md-4 post" data-category="lifestyle">
+        <div class="card shadow-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiLs7wiixzRbQQbVj52WU-N3j6dYFHkb84ig&s" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">The Basics of Investing</h5>
+            <p class="card-text text-muted">Published on October 30, 2023</p>
+            <p class="card-text">An introductory guide to investing, covering key concepts for beginners.</p>
+            <a href="post7.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Post 8 -->
+      <div class="col-md-4 post" data-category="technology">
+        <div class="card shadow-sm">
+          <img src="https://www.methodiaweb.com/wp-content/uploads/2024/01/BLOG-MW-Digital-marketing.jpg" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing Trends for 2024</h5>
+            <p class="card-text text-muted">Published on November 1, 2023</p>
+            <p class="card-text">Discover the trends shaping the digital marketing landscape for the coming year.</p>
+            <a href="post8.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Post 9 -->
+      <div class="col-md-4 post" data-category="lifestyle">
+        <div class="card shadow-sm">
+          <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Top_10_Ways_to_Increase_Productivity_at_Work.jpg" class="card-img-top" alt="Post Image">
+          <div class="card-body">
+            <h5 class="card-title">How to Boost Your Productivity</h5>
+            <p class="card-text text-muted">Published on November 5, 2023</p>
+            <p class="card-text">Effective strategies to increase productivity and make the most of your time.</p>
+            <a href="post9.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+  
+    
+    </div>
+  </section>
+  
+
+  <!-- Modal Structure -->
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="postModalLabel">Post Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" class="img-fluid mb-3" alt="Post Image">
+                <p id="modalDate" class="text-muted"></p>
+                <p id="modalContent"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Categories Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-5">Explore Categories</h2>
+    <div class="row text-center" style="background-color:#b5b5b5; padding: 10px;">
+        <div class="col">
+            <a href="#" class="list-group-item list-group-item-action py-3 bg-light rounded shadow-sm" onclick="filterPosts('technology')">Technology</a>
+        </div>
+        <div class="col">
+            <a href="#" class="list-group-item list-group-item-action py-3 bg-light rounded shadow-sm" onclick="filterPosts('lifestyle')">Lifestyle</a>
+        </div>
+        <div class="col">
+            <a href="#" class="list-group-item list-group-item-action py-3 bg-light rounded shadow-sm" onclick="filterPosts('travel')">Travel</a>
+        </div>
+    </div>
+</section>
+
+  
+
+  <!-- About Section -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="img/i.png" class="img-fluid rounded shadow-sm" alt="About Me">
+      </div>
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>Welcome to my blog! I'm a passionate writer and explorer, eager to share stories, insights, and valuable knowledge. Join me on a journey through different perspectives and engaging topics.</p>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Get In Touch</h2>
+    <p>If you have any questions or would like to collaborate, feel free to reach out to me!</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterPosts(category) {
+      // Get all posts
+      const posts = document.querySelectorAll('.post');
+      
+      // Loop through the posts and display/hide based on category
+      posts.forEach(post => {
+        if (post.getAttribute('data-category') === category || category === '') {
+          post.style.display = 'block';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+
+    // Function to open modal with post details
+function openModal(title, date, content, image) {
+    document.getElementById('postModalLabel').innerText = title;
+    document.getElementById('modalDate').innerText = date;
+    document.getElementById('modalContent').innerText = content;
+    document.getElementById('modalImage').src = image;
+
+    // Show the modal
+    var modal = new bootstrap.Modal(document.getElementById('postModal'));
+    modal.show();
+}
+
+// Attach click event to all Read More buttons
+document.querySelectorAll('.btn-primary').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get the parent card to extract post details
+        const card = this.closest('.card');
+        const title = card.querySelector('.card-title').innerText;
+        const date = card.querySelector('.card-text.text-muted').innerText;
+        const content = card.querySelector('.card-text').innerText;
+        const image = card.querySelector('.card-img-top').src;
+
+        // Open the modal with the post details
+        openModal(title, date, content, image);
+    });
+});
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
